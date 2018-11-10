@@ -14,4 +14,9 @@ class Post < ActiveRecord::Base
     @@all
   end
 
+  def save
+    update(name, self.name)
+    update(content, self.content)
+  end
+
 end
