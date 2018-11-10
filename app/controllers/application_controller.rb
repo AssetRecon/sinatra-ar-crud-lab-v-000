@@ -13,11 +13,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
+    attributes = {
+      name: params['name']
+      content: params['content']
+    }
 
-    post_name = params['name']
-    post_content = params['content']
-
-    Post.create(post_name, post_content)
+    Post.create(attributes)
 
 
   end
