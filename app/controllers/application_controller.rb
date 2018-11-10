@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
       content: params['content']
     }
 
-    Post.create(attributes)
+    @post = Post.create(attributes)
 
   erb :index
   end
