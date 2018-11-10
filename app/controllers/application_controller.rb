@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
 
     Post.create(attributes)
 
-
+  erb :index
   end
 
 end
