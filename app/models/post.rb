@@ -10,13 +10,4 @@ class Post < ActiveRecord::Base
     @content = content
   end
 
-  def self.all
-    @@all
-  end
-
-  def save
-    update(name, self.name)
-    update(content, self.content)
-  end
-
 end
