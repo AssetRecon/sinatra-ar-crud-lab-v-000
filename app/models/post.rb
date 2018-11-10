@@ -13,5 +13,5 @@ class Post < ActiveRecord::Base
   def self.all
     @@all
   end
-  
+
 end
